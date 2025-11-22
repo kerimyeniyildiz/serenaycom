@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#4a1d56" />
+    <title>Serenay.com</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                purple: '#4a1d56',
+                pink: '#ff5f9e',
+                lightPink: '#ffeef5',
+                green: '#00b140',
+                orange: '#f27a1a',
+              }
+            },
+            animation: {
+              'fade-in-up': 'fadeInUp 0.5s ease-out forwards',
+              'scroll-up': 'scrollUp 6s ease-in-out infinite',
+              'scroll-up-3': 'scrollUp3 6s ease-in-out infinite',
+            },
+            keyframes: {
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              scrollUp: {
+                '0%, 45%': { transform: 'translateY(0)' },
+                '50%, 95%': { transform: 'translateY(-33.333%)' },
+                '100%': { transform: 'translateY(-66.666%)' },
+              },
+              scrollUp3: {
+                '0%, 20%': { transform: 'translateY(0)' },
+                '33%, 53%': { transform: 'translateY(-25%)' },
+                '66%, 86%': { transform: 'translateY(-50%)' },
+                '100%': { transform: 'translateY(-75%)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body { font-family: 'Inter', sans-serif; background-color: #f9fafb; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
